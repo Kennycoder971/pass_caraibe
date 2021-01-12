@@ -1,0 +1,143 @@
+.book-form {
+    display: flex;
+    justify-content: space-between;
+    padding: $s-size;
+    max-width: 700px;
+
+
+    .count-field, 
+    .dropdown-field {
+        border: 1px solid white;
+        padding: 0 .5rem;
+        border-radius: 5px;
+        margin-right: .5rem;
+        color: white;
+
+        &:hover {
+            border-color: $green;
+        }
+
+        button {
+            color: white;
+        }
+        .count, .count-item {
+            margin-right: 1rem;
+        }
+
+        .increment {
+            background-color: transparent;
+            cursor: pointer;
+            border: 0;
+            padding: .3rem .6rem;
+        }
+
+        .increment:first-of-type{
+            margin-right: .5rem;
+        }
+    }
+
+    .dropdown-field {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        font-weight: bold;
+
+        cursor: pointer;
+
+        .dropdown-item-name {
+            margin-right: 5rem;
+        }
+
+        .dropdown-amount {
+            margin-left: 1rem;
+        }
+        
+
+        .dropdown-child {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 200px;    
+            transform: translateY(105%);
+            
+            .total {
+                font-size: $ml-size;
+                color: $brown;
+            }
+            .dropdown-child-element {
+                background-color: white;
+                box-shadow: 0px 4px 5px 1px rgba(#000000, .4);
+                color: black;
+                border-radius: 1rem;
+                padding:  1rem 2rem;
+
+                .pass-type {
+                    font-size: 13px;
+                    padding: .3rem 0;
+                    display: grid;
+                    grid-template-columns: 10fr 1fr;
+                    border-bottom: 2px dotted $brown;
+                }
+
+
+                ul {
+                    list-style: none;
+    
+                    li:not(:last-child) {
+                        padding: .3rem 0;
+                        border-bottom: 2px dotted $brown;
+                    }
+                }
+
+                /* 
+                    DEBUT Pour les countfield qui sont dans les dropdown elements
+                */
+
+                .count-field {
+                    border:  0;
+                    color: $brown;
+                    display: grid;
+                    grid-template-columns: 1fr 4fr 1fr 1fr;
+                    align-items: center;
+                    margin-right: 0;
+                    padding: .5rem 0;
+                    font-size: 13px;
+                     
+                    &:not(:last-of-type) {
+                        border-bottom: 2px dotted $brown;
+                        
+                    }
+                    &:last-of-type {
+                       margin-bottom: .5rem;
+                        
+                    }
+
+                    .count {
+                        background-color: $brown;
+                        color: white;
+                        padding: 0 .3rem;
+                        border-radius: 3px;
+                        
+                    }
+
+                    .increment:first-of-type {
+                        margin-right: 0;
+                    }
+
+                    .increment {
+                        color: $brown;
+                        font-weight: bold;
+                    }
+
+
+                }
+
+                /* FIN countfield des dropdown child */
+
+
+            }
+            
+        }
+    }
+}
+

@@ -1,0 +1,43 @@
+.accueil {
+    background-color: $brown;
+
+    .container {
+        
+        display: flex;
+        min-height: 80vh;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 1rem;
+        position: relative;
+
+
+        .title-container {
+            background-color: $beige;
+            border-radius: 0 0 15px 15px;
+            max-width: 300px;
+            padding: 1rem 3rem;
+
+            .logo {
+                height: 50px;
+                width: 50px;
+                background-color: red;
+                margin: $m-size auto 0 auto;
+            }
+            
+            h1 {
+                margin: 0;
+                letter-spacing: 2px;
+            }
+
+            h2 {
+                margin: 0 0 .5rem 0 ;
+                font-size: $s-size;
+                font-weight: bold;
+                letter-spacing: 0px;
+                text-transform: uppercase;
+            }
+        }
+    }
+    
+}
