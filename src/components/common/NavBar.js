@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export default function NavBar() {
   return (
     <nav className="navigation">
-      <div className="container-m">
+      <div className="container-s">
         <ul className="menu">
           <li>
             <NavLink to="/nos-valeurs">Nos Valeurs</NavLink>{" "}
